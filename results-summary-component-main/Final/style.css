@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+  --font-family: "Hanken Grotesk", sans-serif;
+}
+body {
+  min-height: 100vh;
+  font-family: var(--font-family);
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  /* border: 2px solid red; */
+  width: 575px;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 18px var(--Pale-blue);
+  overflow: hidden;
+  display: flex;
+}
+.result-section {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: white;
+  width: 50%;
+  border-radius: 0rem 1rem 1rem 0;
+  padding: 3rem;
+}
+.result-circle {
+  width: 100px;
+  height: 100px;
+  background-image: linear-gradient(
+    hsl(256, 72%, 46%, 1),
+    hsl(241, 72%, 46%, 0)
+  );
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 12px;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+}
+.font-bigger {
+  font-size: 42px;
+  font-weight: 800;
+}
+h3 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1rem;
+}
+h4 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.summary-section {
+  width: 50%;
+}
+.p-1 {
+  text-align: center;
+}
+p {
+  font-size: 1rem;
+}
+.heading {
+  font-size: 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.article-1 {
+  background-color: rgb(253, 218, 218);
+}
+.article-1 p {
+  display: inline;
+  margin: 1rem;
+  color: red;
+}
+.article-1 div {
+  color: grey;
+  margin-left: 0.5rem;
+}
+.font-darker {
+  font-weight: bold;
+  color: black;
+}
+
+.article-2 {
+  background-color: rgb(237, 237, 202);
+}
+.article-2 p {
+  display: inline;
+  margin: 1rem;
+  color: var(--Orangey-yellow);
+}
+.article-2 div {
+  color: grey;
+  margin-left: 0.5rem;
+}
+.article-3 {
+  background-color: rgb(213, 243, 213);
+}
+.article-3 p {
+  display: inline;
+  margin: 1rem;
+  color: var(--Green-teal);
+}
+.article-3 div {
+  color: grey;
+  margin-left: 0.5rem;
+}
+.article-4 {
+  background-color: rgb(221, 221, 235);
+}
+.article-4 p {
+  display: inline;
+  margin: 1rem;
+  color: var(--Light-slate-blue);
+}
+.article-4 div {
+  color: grey;
+  margin-left: 0.5rem;
+}
+button {
+  width: 80%;
+  cursor: pointer;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--Dark-gray-blue);
+  border-radius: 2rem;
+}
+button:hover {
+  border: 2px solid var(--Light-royal-blue);
+  background-color: var(--Light-royal-blue);
+}
+@media (width <= 500px) {
+  body {
+    flex-direction: column;
+  }
+}
